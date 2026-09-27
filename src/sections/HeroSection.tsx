@@ -68,7 +68,7 @@ export default function HeroSection() {
         style={{ y: 0 }}
       >
         <video
-          src="/Hero_video.mp4"
+          src="/Hero_video_1.mp4"
           autoPlay
           muted
           loop

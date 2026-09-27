@@ -39,7 +39,7 @@ interface EventItem {
   details: string;
 }
 
-const SISODIYA = 'Sisodiya Resort, Indore Road, Khandwa';
+const SISODIYA = 'venue name';
 
 const events: EventItem[] = [
   {

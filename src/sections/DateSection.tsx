@@ -71,8 +71,8 @@ export default function DateSection() {
       >
         {/* Date values, no cards — inline with thin dividers */}
         <div className="flex items-center justify-center" style={{ marginTop: '1.5vw' }}>
-          <DateColumn value="26" label="Day" delay={0.4} showDivider />
-          <DateColumn value="Nov" label="Month" delay={0.5} showDivider />
+          <DateColumn value="25" label="Day" delay={0.4} showDivider />
+          <DateColumn value="Oct" label="Month" delay={0.5} showDivider />
           <DateColumn value="2026" label="Year" delay={0.6} showDivider={false} />
         </div>
       </div>
@@ -107,9 +107,9 @@ export default function DateSection() {
             }}
           >
             <img
-              src="/frame_image_1.png"
+              src="/frame_image_3.jpeg"
               alt="Couple"
-              className="w-full h-full object-cover scale-125 translate-x-6"
+              className="w-full h-full object-cover scale-110 -translate-x-2"
             />
           </div>
 

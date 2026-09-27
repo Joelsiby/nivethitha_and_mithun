@@ -7,7 +7,6 @@ import DateSection from './DateSection';
 import LetterSection from './LetterSection';
 import ScheduleOfEventsSection from './ScheduleOfEventsSection';
 import VenueSection from './VenueSection';
-import RSVPSection from './RSVPSection';
 import FooterSection from './FooterSection';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -95,9 +94,6 @@ export default function LandingPage() {
       </div>
       <div className="animate-section">
         <VenueSection />
-      </div>
-      <div className="animate-section">
-        <RSVPSection />
       </div>
       <div className="animate-section">
         <FooterSection />
