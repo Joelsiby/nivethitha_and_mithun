@@ -39,7 +39,7 @@ interface EventItem {
   details: string;
 }
 
-const SISODIYA = 'venue name';
+const SISODIYA = "OG's Tharavadu, Panangad";
 
 const events: EventItem[] = [
   {
@@ -92,7 +92,7 @@ export default function ScheduleOfEventsSection() {
   const isInView = useInView(sectionRef, { once: true, margin: '-100px' });
 
   return (
-    <section ref={sectionRef} className="relative w-full py-16 sm:py-24 bg-[#faf7f2]">
+    <section ref={sectionRef} className="relative w-full pt-0 pb-16 sm:pb-24 bg-[#faf7f2]">
       {/* Drifting clouds */}
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         <Cloud top="6%" delay={0} duration={32} scale={0.9} opacity={0.5} />

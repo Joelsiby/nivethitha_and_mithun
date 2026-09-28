@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import { motion } from 'framer-motion';
+import { ChevronDown } from 'lucide-react';
 
 interface BirdProps {
   delay: number;
@@ -68,7 +69,7 @@ export default function HeroSection() {
         style={{ y: 0 }}
       >
         <video
-          src="/Hero_video_1.mp4"
+          src="/Hero_video_2.mp4"
           autoPlay
           muted
           loop
@@ -76,6 +77,17 @@ export default function HeroSection() {
           className="w-full h-full object-cover"
         />
       </motion.div>
+
+      {/* Hero tagline */}
+      <motion.p
+        className="absolute top-[10%] left-0 right-0 text-center font-script text-[#4a3a2a] z-20"
+        style={{ fontSize: 'clamp(28px, 6vw, 48px)', textShadow: '0 2px 10px rgba(255,255,255,0.6)' }}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.4, duration: 1 }}
+      >
+        We're starting a family
+      </motion.p>
 
       {/* Animated birds */}
       <div className="absolute inset-0 pointer-events-none z-10">
@@ -111,6 +123,25 @@ export default function HeroSection() {
           />
         ))}
       </div>
+
+      {/* Scroll down hint */}
+      <motion.div
+        className="absolute bottom-[5%] left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-20"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, y: [0, 10, 0] }}
+        transition={{
+          opacity: { delay: 1, duration: 1 },
+          y: { delay: 1, duration: 1.6, repeat: Infinity, ease: 'easeInOut' },
+        }}
+      >
+        <p
+          className="font-serif text-[10px] tracking-[0.4em] text-[#4a3a2a] uppercase font-medium"
+          style={{ textShadow: '0 1px 6px rgba(255,255,255,0.6)' }}
+        >
+          Scroll Down
+        </p>
+        <ChevronDown className="w-5 h-5 text-[#4a3a2a] drop-shadow-md" />
+      </motion.div>
     </section>
   );
 }

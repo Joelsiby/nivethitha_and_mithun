@@ -2,8 +2,8 @@ import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { MapPin } from 'lucide-react';
 
-const VENUE_NAME = 'venue name';
-const MAPS_URL = 'https://maps.app.goo.gl/9xE6ZcoJAzBbAwS2A';
+const VENUE_NAME = "OG's Tharavadu";
+const MAPS_URL = 'https://share.google/FdfHUFTajhjECahJA';
 
 export default function VenueSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -49,6 +49,7 @@ export default function VenueSection() {
             </div>
             <div>
               <p className="font-display text-lg text-[#6b5b4e]">{VENUE_NAME}</p>
+              <p className="font-serif text-sm text-[#7a6a5d]">Panangad</p>
             </div>
           </motion.a>
 
