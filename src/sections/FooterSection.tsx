@@ -8,6 +8,25 @@ export default function FooterSection() {
   return (
     <section ref={sectionRef} className="relative w-full bg-[#faf7f2]">
       <div className="relative z-10 flex flex-col items-center w-full">
+        {/* Hope to see you */}
+        <motion.div
+          className="mt-12 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ delay: 0.2, duration: 0.8 }}
+        >
+          <p className="font-script text-2xl text-[#8b7d6b] mb-2">Hope to see you there!</p>
+          <p className="font-display text-xl text-[#6b5b4e]">Nivethitha &amp; Mithun</p>
+
+          <motion.div
+            className="mt-4"
+            animate={{ scale: [1, 1.2, 1] }}
+            transition={{ duration: 1.5, repeat: Infinity }}
+          >
+            <img src="/blue_heart.png" alt="heart" className="w-12 sm:w-16 h-auto mx-auto opacity-80 drop-shadow-md" />
+          </motion.div>
+        </motion.div>
+
         {/* Couple Image (Full Bleed) */}
         <motion.div
           className="relative w-full overflow-hidden"
