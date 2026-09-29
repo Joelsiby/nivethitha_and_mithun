@@ -6,7 +6,7 @@ export default function LetterSection() {
   const isInView = useInView(sectionRef, { once: true, margin: '-100px' });
 
   return (
-    <section ref={sectionRef} className="relative w-full bg-[#faf7f2] overflow-hidden pt-2 sm:pt-4 pb-0">
+    <section ref={sectionRef} className="relative w-full bg-[#faf7f2] overflow-hidden pt-0 pb-0 -mt-20 sm:-mt-24">
       {/* Floating hearts decoration */}
       <motion.div
         className="absolute inset-0 pointer-events-none overflow-hidden z-0"
@@ -44,20 +44,14 @@ export default function LetterSection() {
       </motion.div>
 
       <div className="relative z-10 flex flex-col items-center w-full">
-        <img
-          src="/welcome-flowers-bottom.png"
-          alt=""
-          className="w-full max-w-md h-auto pointer-events-none select-none -mb-6"
-        />
-
         {/* Letter framed inside the venue background card */}
         <motion.div
-          className="relative w-screen flex-shrink-0 overflow-hidden"
+          className="relative w-screen flex-shrink-0 overflow-hidden pb-8 sm:pb-10"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <div className="relative scale-110">
+          <div className="relative scale-110 translate-y-8 sm:translate-y-10">
             <img
               src="/venue_background.png"
               alt="Venue"

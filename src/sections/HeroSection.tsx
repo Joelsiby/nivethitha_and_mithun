@@ -69,7 +69,7 @@ export default function HeroSection() {
         style={{ y: 0 }}
       >
         <video
-          src="/Hero_video_2.mp4"
+          src="/Hero_video_3.mp4"
           autoPlay
           muted
           loop
@@ -78,16 +78,26 @@ export default function HeroSection() {
         />
       </motion.div>
 
-      {/* Hero tagline */}
-      <motion.p
-        className="absolute top-[10%] left-0 right-0 text-center font-script text-[#4a3a2a] z-20"
-        style={{ fontSize: 'clamp(28px, 6vw, 48px)', textShadow: '0 2px 10px rgba(255,255,255,0.6)' }}
+      {/* Hero tagline, set on an arch */}
+      <motion.div
+        className="absolute top-[5%] left-0 right-0 z-20 pointer-events-none"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4, duration: 1 }}
       >
-        We're starting a family
-      </motion.p>
+        <svg viewBox="0 0 400 150" className="w-full h-auto max-w-2xl mx-auto">
+          <path id="hero-arch-path" d="M 20,140 A 260,260 0 0 1 380,140" fill="none" />
+          <text
+            className="font-script"
+            fill="#4a3a2a"
+            style={{ fontSize: '46px', textShadow: '0 2px 10px rgba(255,255,255,0.6)' }}
+          >
+            <textPath href="#hero-arch-path" startOffset="50%" textAnchor="middle">
+              We're starting a family
+            </textPath>
+          </text>
+        </svg>
+      </motion.div>
 
       {/* Animated birds */}
       <div className="absolute inset-0 pointer-events-none z-10">

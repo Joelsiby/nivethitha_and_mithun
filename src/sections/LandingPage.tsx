@@ -87,14 +87,14 @@ export default function LandingPage() {
       <div className="animate-section">
         <DateSection />
       </div>
+      <div className="relative z-30 animate-section">
+        <VenueSection />
+      </div>
       <div className="relative z-20 animate-section">
         <LetterSection />
       </div>
       <div className="relative z-10 animate-section">
         <ScheduleOfEventsSection />
-      </div>
-      <div className="animate-section">
-        <VenueSection />
       </div>
       <div className="animate-section">
         <DressCodeSection />
