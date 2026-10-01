@@ -3,10 +3,13 @@ import { motion, useInView } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
 
 const dressImages = [
-  '/slider_imag_1.jpeg',
-  '/slider_imag_2.jpeg',
-  '/slider_imag_3.jpeg',
-  '/slider_imag_4.jpeg',
+  '/corousel_img_1.jpg',
+  '/corousel_img_2.jpg',
+  '/corousel_img_3.jpg',
+  '/corousel_img_4.jpg',
+  '/corousel_img_5.jpg',
+  '/corousel_img_6.jpg',
+  '/corousel_img_7.jpg',
 ];
 
 const colorSwatches = [

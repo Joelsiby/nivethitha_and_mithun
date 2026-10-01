@@ -148,7 +148,12 @@ export default function EnvelopeOpening({ onOpenComplete }: EnvelopeOpeningProps
               transform: 'translate(-50%, -50%) translate3d(0, 25px, 800px)'
             }}
           >
-            <img src="/logo.png" className="w-32 h-32 object-contain drop-shadow-2xl" alt="Logo" />
+            <img
+              src="/nm_logo_wedding.png"
+              className="w-32 h-32 object-contain drop-shadow-md"
+              style={{ filter: 'saturate(0.85) contrast(0.92) brightness(0.98)' }}
+              alt="Logo"
+            />
             <p className={`mt-6 text-stone-700 font-script text-2xl tracking-[0.05em] transition-opacity duration-300 ${isOpen ? 'opacity-0' : 'animate-pulse'}`}>
               Click to open
             </p>

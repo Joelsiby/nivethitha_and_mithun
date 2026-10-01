@@ -43,47 +43,22 @@ const SISODIYA = "OG's Tharavadu, Panangad";
 
 const events: EventItem[] = [
   {
-    title: 'Mata Pujan',
-    dateTime: 'Sunday, 25 Oct 2026  |  9:00 AM',
-    venue: 'Residence',
-    details: 'Auspicious beginning of the wedding festivities seeking the protective blessings of the Divine Mother / Kuldevi.',
+    title: 'Lunch',
+    dateTime: '12:30 PM – 2:00 PM',
+    venue: SISODIYA,
+    details: "Food first, forever after! Eat up and get comfy.",
   },
   {
-    title: 'Ganesh Pujan',
-    dateTime: 'Sunday, 25 Oct 2026  |  8:00 AM',
-    venue: SISODIYA,
-    details: 'Invoking Vighnaharta (Lord Ganesha) to remove all physical and spiritual obstacles from the marriage celebrations.',
+    title: 'The Ceremony',
+    dateTime: '2:30 PM',
+    venue: 'By the Pool',
+    details: 'Meet us by the pool as we tie the knot.',
   },
   {
-    title: 'Mandap Pratishtha',
-    dateTime: 'Sunday, 25 Oct 2026  |  10:00 AM',
+    title: 'High Tea',
+    dateTime: '3:30 PM',
     venue: SISODIYA,
-    details: 'Consecration of the sacred wedding canopy representing the cosmos, blessing Mother Earth and the elements.',
-  },
-  {
-    title: 'Haldi',
-    dateTime: 'Sunday, 25 Oct 2026',
-    venue: SISODIYA,
-    details: 'Purification and beautification ritual using turmeric paste to ward off the evil eye and bestow marital glow.',
-  },
-  {
-    title: 'Sangeet Mehfil',
-    dateTime: 'Sunday, 25 Oct 2026  |  7:00 PM',
-    venue: SISODIYA,
-    details: 'Musical gathering to celebrate joy, foster bonding between both families, and release pre-wedding excitement.',
-  },
-  {
-    title: 'Baraat',
-    dateTime: 'Sunday, 25 Oct 2026  |  Evening',
-    venue: SISODIYA,
-    details: 'Joyous bridal procession where the groom arrives accompanied by music and dancing family members.',
-  },
-
-  {
-    title: 'Reception',
-    dateTime: 'Sunday, 25 Oct 2026  |  7:30 PM',
-    venue: SISODIYA,
-    details: 'Formal blessing ceremony and celebratory community feast welcoming the couple into societal and family life.',
+    details: 'Stick around, because every love story deserves a good cup of chai.',
   },
 ];
 
@@ -133,7 +108,7 @@ export default function ScheduleOfEventsSection() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.2, duration: 0.8 }}
         >
-          Wedding Timeline
+          Food First, Forever After
         </motion.h2>
 
         {/* Events list */}

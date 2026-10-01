@@ -107,7 +107,7 @@ export default function DateSection() {
             }}
           >
             <img
-              src="/frame_image_3.jpeg"
+              src="/frame_image_2.jpg"
               alt="Couple"
               className="w-full h-full object-cover scale-110 -translate-x-2"
             />
