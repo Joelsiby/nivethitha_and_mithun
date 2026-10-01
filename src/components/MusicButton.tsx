@@ -37,9 +37,19 @@ export default function MusicButton() {
     audio.addEventListener('play', onPlay);
     audio.addEventListener('pause', onPause);
 
+    // Only play the first 20 seconds, then loop back to the start.
+    const LOOP_END = 20;
+    const onTimeUpdate = () => {
+      if (audio.currentTime >= LOOP_END) {
+        audio.currentTime = 0;
+      }
+    };
+    audio.addEventListener('timeupdate', onTimeUpdate);
+
     return () => {
       audio.removeEventListener('play', onPlay);
       audio.removeEventListener('pause', onPause);
+      audio.removeEventListener('timeupdate', onTimeUpdate);
     };
   }, []);
 
@@ -56,7 +66,7 @@ export default function MusicButton() {
 
   return (
     <>
-      <audio ref={audioRef} src="/background_song_niv.mp3" loop />
+      <audio ref={audioRef} src="/background_song_niv.mp3" />
       <motion.button
         onClick={toggle}
         aria-label={isPlaying ? 'Pause music' : 'Play music'}

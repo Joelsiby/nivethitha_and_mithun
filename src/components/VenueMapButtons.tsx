@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion';
 import { MapPin } from 'lucide-react';
 
-const RESIDENCE_MAPS_URL = 'https://maps.app.goo.gl/7SybhzCJQzfPah2Y9?g_st=aw';
-const RESORT_MAPS_URL = 'https://maps.app.goo.gl/ywLvrWSwb8TDsRm96?g_st=aw';
+const VENUE_MAPS_URL = 'https://maps.app.goo.gl/rNC4xNcMUDGwAjdXA';
 
 function MapButton({ label, href, delay }: { label: string; href: string; delay: number }) {
   return (
@@ -32,10 +31,5 @@ function MapButton({ label, href, delay }: { label: string; href: string; delay:
 }
 
 export default function VenueMapButtons() {
-  return (
-    <>
-      <MapButton label="Residence" href={RESIDENCE_MAPS_URL} delay={1} />
-      <MapButton label="Resort" href={RESORT_MAPS_URL} delay={1.15} />
-    </>
-  );
+  return <MapButton label="Venue" href={VENUE_MAPS_URL} delay={1} />;
 }

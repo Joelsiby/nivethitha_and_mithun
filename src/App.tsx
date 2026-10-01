@@ -24,7 +24,11 @@ export default function App() {
 
       {/* Landing page is always rendered underneath */}
       <LandingPage />
-      <div className="fixed bottom-6 right-6 z-[110] flex items-center gap-2">
+      <div
+        className={`fixed bottom-6 right-6 z-[110] flex items-center gap-2 transition-opacity duration-500 ${
+          showEnvelope ? 'opacity-0 pointer-events-none' : 'opacity-100'
+        }`}
+      >
         <VenueMapButtons />
         <MusicButton />
       </div>
